@@ -2,7 +2,7 @@ import React from "react";
 import moon from "../images/moon.svg";
 import sun from "../images/sun.svg";
 import useDarkMode from "../hooks/useDarkMode";
-import "./styles/headerImage.css";
+import "./styles/headerImage.scss";
 import PropTypes from "prop-types";
 
 const HeaderImage = ({ lightText, darkText }) => {

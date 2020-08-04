@@ -1,9 +1,8 @@
-import PropTypes from "prop-types";
 import React from "react";
 import useDarkMode from "../hooks/useDarkMode";
 import Toggle from "react-toggle";
 import "react-toggle/style.css";
-import "./styles/header.css";
+import "./styles/header.scss";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
