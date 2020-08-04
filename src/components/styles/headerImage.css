@@ -1,0 +1,18 @@
+@import "./__variables.css";
+
+.headerImg {
+  padding: 120px 10% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  height: calc(100vh - 120px);
+}
+
+.headerImg > h1 {
+  color: var(--text-color);
+}
+
+.themeImg {
+  width: 510px;
+}
