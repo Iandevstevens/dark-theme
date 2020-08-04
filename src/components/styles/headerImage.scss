@@ -1,4 +1,4 @@
-@import "./__variables.css";
+@import "./__variables.scss";
 
 .headerImg {
   padding: 120px 10% 0;
@@ -7,12 +7,10 @@
   align-items: center;
   background-color: var(--secondary-color);
   height: calc(100vh - 120px);
-}
-
-.headerImg > h1 {
-  color: var(--text-color);
-}
-
-.themeImg {
-  width: 510px;
+  & > h1 {
+    color: var(--text-color);
+  }
+  .themeImg {
+    width: 510px;
+  }
 }

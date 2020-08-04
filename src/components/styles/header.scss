@@ -1,0 +1,48 @@
+@import "./__variables.scss";
+
+.header {
+  background-color: var(--primary-color);
+  width: 80%;
+  display: flex;
+  padding: 0 10%;
+  height: 80px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 0px 20px 0px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 80px);
+    .logo {
+      color: var(--text-color);
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+  }
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 1rem;
+    &.active-link {
+      color: var(--secondary-text-color);
+    }
+  }
+}
+
+.toggle > .react-toggle-track {
+  background-color: #4d4d4d !important;
+}
+
+.toggle-icons {
+  position: absolute;
+  top: 6px;
+  left: -6px;
+  &.moon::before {
+    content: "\1F31C";
+  }
+  &.sun::before {
+    content: "\1F31E";
+  }
+}

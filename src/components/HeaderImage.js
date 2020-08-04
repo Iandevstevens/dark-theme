@@ -9,10 +9,7 @@ const HeaderImage = ({ lightText, darkText }) => {
   const [theme] = useDarkMode();
   return (
     <div className={`headerImg ${theme}-theme`}>
-      <h1>
-        {theme === "light" ? lightText : darkText} -{" "}
-        {theme === "light" ? "rendering light" : "rendering dark"}
-      </h1>
+      <h1>{theme === "light" ? lightText : darkText}</h1>
       <img className="themeImg" src={theme === "light" ? sun : moon} alt="" />
     </div>
   );
